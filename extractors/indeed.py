@@ -16,13 +16,14 @@ def load_url(keyword, page):
     browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     final_url = f"{base_url}?q={keyword}&start={page * 10}{end_url}"
-    print("Loading", final_url)
-    browser.get(final_url)
+    #print("Loading", final_url)
+    #browser.get(final_url)
 
-    return browser
+    return browser, final_url
 
 def get_page_count(keyword):
-    browser= load_url(keyword, 0)
+    browser, final_url = load_url(keyword, 0)
+    browser.get(final_url)
 
     soup = BeautifulSoup(browser.page_source, "html.parser")
 
@@ -46,7 +47,9 @@ def extract_indeed_jobs(keyword):
     results = []
 
     for page in range(pages):
-        browser= load_url(keyword, page)
+        browser, final_url = load_url(keyword, page)
+        print("Loading", final_url)
+        browser.get(final_url)
 
         soup = BeautifulSoup(browser.page_source, "html.parser")
         job_list = soup.find("ul", class_ = "jobsearch-ResultsList")
@@ -63,9 +66,9 @@ def extract_indeed_jobs(keyword):
         
                 job_data = {
                     "link": f"https://kr.indeed.com/jobs?q=python&limit=50{link}",
-                    "company": company.string,
-                    "location": company_loc.string,
-                    "position": title
+                    "company": company.string.replace(",", " "),
+                    "location": company_loc.string.replace(",", " "),
+                    "position": title.replace(",", " ")
                 }
                 results.append(job_data)
 
