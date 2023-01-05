@@ -11,7 +11,7 @@ def load_url(keyword, page):
     options = Options()
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
-    options.add_experimental_option("detach", True)
+    #options.add_experimental_option("detach", True)
     
     browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
