@@ -1,4 +1,4 @@
-# Job Scrapper Using Python
+# Job Scraper Using Python
 
 This is a simple project which will scrap data from websites.
 
