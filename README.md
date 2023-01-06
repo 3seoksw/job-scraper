@@ -1,19 +1,21 @@
 # Job Scraper Using Python
 
-This is a simple project which will scrap data from websites.
-
 ### Table of Contents
 <ul>
     <li><a href="#intro">Introduction</a></li>
-    <li><a href="#req-libs">Required Libraries</a></li>
+    <li><a href="#showcase">Showcase</a></li>
+    <li><a href="#pre">Prerequisites</a></li>
 </ul>
 
 
 <h3 id="intro">Introduction</h3>
-Here goes the intro for the project.
+This is a simple python project which will scrap job data from websites that are <a href="indeed.com">indeed</a> and <a href="weworkremotely.com">WE WORK REMOTELY</a>.
+By using <b>Selenium</b>, python will automatically browse the websites and scrap job information which are title, company, location, and link. <br>
+You can download a csv file which includes the data we have scraped.
 
+<h3 id="showcase">Showcase</h3>
 
-<h3 id="req-libs">Required Libraries</h2>
+<h3 id="pre">Prerequisites</h2>
 <ol>
     <li><a href="https://requests.readthedocs.io/en/latest/#" target="_blank">requests</a></li>
         <b>requests</b> library will allow us to get access through websites. <br>
@@ -30,7 +32,5 @@ Here goes the intro for the project.
         <code>pip3 install flask</code> <br>
     <li><a href="https://picocss.com" target="_blank">Pico.css</a></li>
         <b>Pico.css</b> will help your web looks fancier without any hard word<br>
-        <pre>
-            <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
-        </pre>
+        <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"&gt;</code></pre>
 </ol>
