@@ -31,6 +31,6 @@ Here goes the intro for the project.
     <li><a href="https://picocss.com" target="_blank">Pico.css</a></li>
         <b>Pico.css</b> will help your web looks fancier without any hard word<br>
         <pre>
-            &lt;link rel="stylesheet" href="css/pico.min.css"%gt;
+            <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
         </pre>
 </ol>
