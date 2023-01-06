@@ -14,6 +14,9 @@ By using <b>Selenium</b>, python will automatically browse the websites and scra
 You can download a csv file which includes the data we have scraped.
 
 <h3 id="showcase">Showcase</h3>
+<img width="1220" alt="job_scraper_1" src="https://user-images.githubusercontent.com/97219959/210960653-1dd20291-b0f8-4e90-a461-7a014b164431.png">
+<img width="1190" alt="job_scraper_2" src="https://user-images.githubusercontent.com/97219959/210960662-103bc1dc-49a7-4cfc-9481-92a28d1e5bcc.png">
+<img width="1186" alt="job_scraper_3" src="https://user-images.githubusercontent.com/97219959/210960667-410ff77c-e3d3-48cd-b36e-f1e867995c1e.png">
 
 <h3 id="pre">Prerequisites</h2>
 <ol>
