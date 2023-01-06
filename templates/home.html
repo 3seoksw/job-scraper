@@ -2,10 +2,18 @@
 <html lang="en">
     <head>
         <title>Job Scraper</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <h1>Hello World!!! {{name}}</h1> 
+        <main class="container">
+            <h1>Job Scraper</h1> 
+            <h4>Which job do you want?</h4>
+            <form action="/search">
+                <input type="text" name="keyword" placeholder="Enter a job" />
+                <button>Search</button>
+            </form>
+        </main>
     </body>
 </html>
