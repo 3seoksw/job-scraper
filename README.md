@@ -28,4 +28,9 @@ Here goes the intro for the project.
     <li><a href="https://palletsprojects.com/p/flask/" target="_blank">Flask</a></li>
         <b>Flask</b> is a web application framework helps you to design a web easy and fast. <br>
         <code>pip3 install flask</code> <br>
+    <li><a href="https://picocss.com" target="_blank">Pico.css</a></li>
+        <b>Pico.css</b> will help your web looks fancier without any hard word<br>
+        <pre>
+            &lt;link rel="stylesheet" href="css/pico.min.css"%gt;
+        </pre>
 </ol>
